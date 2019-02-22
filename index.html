@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>百煉-不規則動詞</title>
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- Preloader -->
+<!--    <div id="preloader">
+       <div class="dorne-load"></div>
+   </div> -->
+
+<!-- ***** Welcome Area Start ***** -->
+<section class="dorne-welcome-area bg-img bg-overlay" style="background-image: url(img/bg-img/hero-1.jpg);">
+    <div class="container h-75">
+        <div class="row h-75 align-items-center justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="hero-content">
+                    <center><h2 id='Vocabulary'></h2></center>
+                </div>
+                <!-- Hero Search Form -->
+                <div class="hero-search-form">
+                    <!-- Tabs -->
+                    <div class="nav nav-tabs" id="heroTab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-verb-tab" data-toggle="tab" href="#nav-verb"
+                           role="tab" aria-controls="nav-verb" aria-selected="true">不規則動詞</a>
+                        <a class="nav-item nav-link" id="nav-number-tab" data-toggle="tab" href="#nav-number" role="tab"
+                           aria-controls="nav-number" aria-selected="false">數字</a>
+                    </div>
+                    <!-- Tabs Content -->
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-verb" role="tabpanel"
+                             aria-labelledby="nav-verb-tab">
+                            <!--<h6>不規則動詞</h6>-->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <h6>不規則模式</h6>
+                                    </div>
+                                    <div class="col-3 mb-5">
+                                        <select class="custom-select" id="verbMode">
+                                            <option value="base" selected>Original</option>
+                                            <option value="pw">Past was</option>
+                                            <option value="pp">Past Participle</option>
+                                            <option value="zh">Chinese</option>
+                                            <option value="random">Random</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <h6>秒數</h6>
+                                    </div>
+                                    <div class="col-2  mb-5">
+                                        <input type="number" id="seconds_verb" class="form-control" placeholder="Seconds"
+                                               min="1" max="5" step='0.1' required="required" value="2">
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-end">
+                                    <div class="col">
+                                    </div>
+                                    <div class="col">
+
+                                    </div>
+                                    <div class="col-3">
+                                        <button id='verbBut' type="submit" onclick="startRun('verb')" class="btn dorne-btn">
+                                            Run
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-number" role="tabpanel" aria-labelledby="nav-number-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <h6>位數</h6>
+                                    </div>
+                                    <div class="col-3 mb-5">
+                                        <select class="custom-select" id="numbMode">
+                                            <option value="10" selected>ones</option>
+                                            <option value="100" selected>tens</option>
+                                            <option value="1000">hundred</option>
+                                            <option value="10000">thousand</option>
+                                            <option value="100000">Ten thousand</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-1">
+                                        <h6>顯示單字</h6>
+                                    </div>
+                                    <div class="col-2 mb-5">
+                                        <select class="custom-select" id="showNumEng">
+                                            <option value="true">YES</option>
+                                            <option value="false" selected>NO</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-1">
+                                        <h6>秒數</h6>
+                                    </div>
+                                    <div class="col-2  mb-5">
+                                        <input type="number" id="seconds_number" class="form-control" placeholder="Seconds"
+                                               min="1" max="5" step='0.1' required="required" value="2">
+                                    </div>
+
+                                </div>
+
+                                <div class="row align-items-end">
+                                    <div class="col">
+                                    </div>
+                                    <div class="col">
+
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="submit" onclick="startRun('number')" class="btn dorne-btn">
+                                            Run
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- jQuery-2.2.4 js -->
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/bootstrap/popper.min.js"></script>
+<!-- Bootstrap-4 js -->
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!-- All Plugins js -->
+<script src="js/others/plugins.js"></script>
+<!-- Active JS -->
+<script src="js/active.js"></script>
+
+<script src="js/xml.js"></script>
+
+<script src="js/verb.js"></script>
+
+
+</body>
+
+</html>
