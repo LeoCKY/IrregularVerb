@@ -46,52 +46,40 @@
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-verb" role="tabpanel"
                              aria-labelledby="nav-verb-tab">
-                            <!--<h6>不規則動詞</h6>-->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <h6>不規則模式</h6>
-                                    </div>
-                                    <div class="col-3 mb-5">
-                                        <select class="custom-select" id="verbMode">
-                                            <option value="base" selected>Original</option>
-                                            <option value="pw">Past was</option>
-                                            <option value="pp">Past Participle</option>
-                                            <option value="zh">Chinese</option>
-                                            <option value="random">Random</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-2">
-                                        <h6>秒數</h6>
-                                    </div>
-                                    <div class="col-2  mb-5">
-                                        <input type="number" id="seconds_verb" class="form-control" placeholder="Seconds"
-                                               min="1" max="5" step='0.1' required="required" value="2">
-                                    </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mt-30">
+                                    <h6>不規則模式</h6>
+
+                                    <select class="custom-select" id="verbMode">
+                                        <option value="base" selected>Original</option>
+                                        <option value="pw">Past was</option>
+                                        <option value="pp">Past Participle</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="random">Random</option>
+                                    </select>
                                 </div>
 
-                                <div class="row align-items-end">
-                                    <div class="col">
-                                    </div>
-                                    <div class="col">
-
-                                    </div>
-                                    <div class="col-3">
-                                        <button id='verbBut' type="submit" onclick="startRun('verb')" class="btn dorne-btn">
-                                            Run
-                                        </button>
-                                    </div>
+                                <div class="col-md-6 mt-30">
+                                    <h6>秒數</h6>
+                                    <input type="number" id="seconds_verb" class="form-control" placeholder="Seconds"
+                                           min="1" max="5" step='0.1' required="required" value="2">
+                                </div>
+                            </div>
+                            <div class="row mt-50">
+                                <div class="col">
+                                    <button id='verbBut' type="submit" onclick="startRun('verb')"
+                                            class="btn dorne-btn">
+                                        Run
+                                    </button>
                                 </div>
                             </div>
                         </div>
-
                         <div class="tab-pane fade" id="nav-number" role="tabpanel" aria-labelledby="nav-number-tab">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-1">
+                                    <div class="col-md-6 mt-30">
                                         <h6>位數</h6>
-                                    </div>
-                                    <div class="col-3 mb-5">
                                         <select class="custom-select" id="numbMode">
                                             <option value="10" selected>ones</option>
                                             <option value="100" selected>tens</option>
@@ -100,32 +88,23 @@
                                             <option value="100000">Ten thousand</option>
                                         </select>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-md-6 mt-30">
                                         <h6>顯示單字</h6>
-                                    </div>
-                                    <div class="col-2 mb-5">
                                         <select class="custom-select" id="showNumEng">
                                             <option value="true">YES</option>
                                             <option value="false" selected>NO</option>
                                         </select>
                                     </div>
-                                    <div class="col-1">
+                                    <div class="col-md-6 mt-30">
                                         <h6>秒數</h6>
-                                    </div>
-                                    <div class="col-2  mb-5">
-                                        <input type="number" id="seconds_number" class="form-control" placeholder="Seconds"
+                                        <input type="number" id="seconds_number" class="form-control"
+                                               placeholder="Seconds"
                                                min="1" max="5" step='0.1' required="required" value="2">
                                     </div>
-
                                 </div>
 
-                                <div class="row align-items-end">
+                                <div class="row mt-50">
                                     <div class="col">
-                                    </div>
-                                    <div class="col">
-
-                                    </div>
-                                    <div class="col-3">
                                         <button type="submit" onclick="startRun('number')" class="btn dorne-btn">
                                             Run
                                         </button>
