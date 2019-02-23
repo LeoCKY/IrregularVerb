@@ -69,7 +69,7 @@
     }
     .hero-content h2 {
         color: #fff;
-        font-size: 40px;
+        font-size: 42px;
     }
     .hero-social-btn {
         bottom: 140px;
@@ -87,7 +87,7 @@
         font-size: 13px;
     }
     .about-content h2 {
-        font-size: 60px;
+        font-size: 36px;
     }
     .single-catagory-area {
         padding: 40px 15px;
@@ -171,7 +171,7 @@
     }
     .hero-content h2 {
         color: #fff;
-        font-size: 40px;
+        font-size: 24px;
     }
     .hero-social-btn {
         display: none;
@@ -305,7 +305,7 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
     .hero-content h2 {
-        font-size: 35px;
+        font-size: 36px;
     }
     .feature-events-thumb {
         width: 179px;
